@@ -1,0 +1,35 @@
+/* Add these specific styles for image optimization */
+.book-carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.book-carousel img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.book-carousel img.active {
+    opacity: 1;
+}
+
+/* Header optimization */
+header {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Rest of your existing CSS styles */
